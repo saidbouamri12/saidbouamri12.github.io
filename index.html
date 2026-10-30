@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Driving Uploader</title>
+<style>
+  :root { --bg: #f7f7fa; --card: #ffffff; --ink: #17171f; --mute: #5c5c6b; --line: #e2e2ea; --acc: #0a6f95; --yt: #ff0033; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #101218; --card: #191c24; --ink: #ececf2; --mute: #a3a6b4; --line: #2c303b; --acc: #4cc4ef; }
+  }
+  :root[data-theme="dark"] { --bg: #101218; --card: #191c24; --ink: #ececf2; --mute: #a3a6b4; --line: #2c303b; --acc: #4cc4ef; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 32px 16px 40px; }
+  .hero { background: linear-gradient(160deg, #0b0d24, #2a0f45); color: #fff; border-radius: 14px; padding: 28px 24px; }
+  .hero h1 { margin: 0 0 6px; font-size: 32px; }
+  .hero p { margin: 0; color: #d6d8ef; }
+  .yt { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; padding: 8px 14px; border-radius: 8px;
+        background: #fff; color: #111; font-weight: 600; text-decoration: none; }
+  .yt b { color: var(--yt); }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 4px 22px 14px; margin: 16px 0; }
+  h2 { font-size: 19px; margin: 18px 0 6px; }
+  ul { padding-left: 22px; margin: 6px 0; }
+  li { margin: 4px 0; }
+  a { color: var(--acc); overflow-wrap: anywhere; }
+  footer { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 14px; color: var(--mute); font-size: 15px;
+           display: flex; flex-wrap: wrap; gap: 8px 20px; }
+  footer a { font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <h1>AI Driving Uploader</h1>
+    <p>The private upload tool for the developer's own YouTube channels, such as <b>Last Lap Daily</b>: mobile racing game Shorts, every day.</p>
+    <a class="yt" href="https://www.youtube.com/@lastlapdaily">Watch Last Lap Daily on <b>YouTube</b></a>
+  </div>
+
+  <section>
+    <h2>What it does</h2>
+    <ul>
+      <li>Uploads each channel's own gameplay Shorts to YouTube on a daily schedule.</li>
+      <li>Sets each video's title, description, tags, thumbnail and playlist.</li>
+      <li>Reads each channel's own view counts and analytics to see which videos work best.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Who can use it</h2>
+    <p>Only the developer, on YouTube channels the developer owns and operates. The tool runs on the developer's own computer,
+       signs in with Google (OAuth) for each channel and touches nothing else. It is not offered to the public and has no other users.</p>
+  </section>
+
+  <section>
+    <h2>YouTube API Services</h2>
+    <p>This tool uses <b>YouTube API Services</b> (YouTube Data API v3 and YouTube Analytics API). Its use is subject to the
+       <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
+       <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
+  </section>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="https://www.youtube.com/@lastlapdaily">YouTube channel</a>
+    <span>Contact: <a href="mailto:1bouamri1998@gmail.com">1bouamri1998@gmail.com</a></span>
+  </footer>
+</main>
+</body>
+</html>
